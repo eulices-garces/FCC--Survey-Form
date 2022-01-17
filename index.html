@@ -10,37 +10,74 @@
 <body>
     <div class="todo">
 
-        <div id="title">
-            <h1>Naruto Survey</h1>
-            <p>Thank you for taking the time to help us improve the platform</p>
-        </div>
+        <div>
+            <h1 id="title">Naruto Survey</h1>
+            <p id="description">Thank you for taking the time to help us.</p>
+      </div>
 
         
         <form id="survey-form" action="">
-            <label for="name">Name</label>
-            <br>
-            <input id="name" type="text" name="name" required >
-            <br>
-            <label for="last">Email</label>
-            <br>
-            <input type="email" name="email" id="last">
-            <br>
-            <label for="age" id="age">Age</label>
-            <br>
-            <input type="number" name="number" id="age">
-            <br>
-            <label for="recommend" id="recommend">
+            <label id="name-label" for="name">Name
+                <input id="name" type="text" name="name" placeholder="Enter your name" required >
+                <br>
+                <br>
+            </label>
 
-                <p>Would you recommend Naruto Shippuden to a friend</p>
+            <label id="email-label" for="last">Email
+                <input type="email" name="email" id="email" placeholder="Enter your email" required>
                 <br>
-                <input type="radio" name="recommend" id="recommend">Definitely
-                <br>
-                <input type="radio" name="recommend" id="recommend">Maybe
-                <br>
-                <input type="radio" name="recommend" id="recommend">Not sure
             </label>
             <br>
-            <button type="submit">SUBMIT</button>
+            <label id="number-label" for="age" id="number">Age
+                <br>
+                <input type="number" name="number" id="number" min="4" max="100" placeholder="Enter your age" required>
+                <br>
+            </label>
+            <br>
+            <label for="recommend" id="recommend">
+                Would you recommend Naruto Shippuden to a friend.
+                <br>
+                <input type="radio" value="Definitely" name="recommend" id="recommend" checked>Definitely
+                <br>
+                <input type="radio" value="Maybe" name="recommend" id="recommend">Maybe
+                <br>
+                <input type="radio" value="Not sure" name="recommend" id="recommend">Not sure
+            </label>
+            <br> 
+            <br>
+            <label for="">
+                What is your favorite movie of Naruto Shippūden?
+                <select name="dropdown" id="dropdown">
+                <option selected value="0"> Select an option</option>
+                    <option value="1">Naruto Shippūden La Película</option> 
+                    <option value="2">Naruto Shippūden Kizuna</option> 
+                    <option value="3">Naruto Shippūden Los Herederos de la Voluntad de Fuego</option>
+                    <option value="4">Naruto Shippūden La Torre Perdida</option> 
+                    <option value="5">Naruto Shippūden La Prisión de Sangre</option>
+                    <option value="6">Naruto Shippūden El camino Ninja</option>
+                    <option value="7">Naruto Shippuden The Last</option>
+                </select>
+            </label>
+
+            <br>
+            <br>
+            <label for="recommend" id="recommend">
+                what kind of jutsu do you prefer.
+                <br>
+                <input type="checkbox" name="recommend" id="recommend" value="Ninjutsu" checked>Ninjutsu
+                <br>
+                <input type="checkbox" name="recommend" value="Genjutsu" id="recommend">Genjutsu
+                <br>
+                <input type="checkbox" name="recommend" value="Taijutsu" id="recommend">Taijutsu
+            </label>
+            
+            <p class="comments">Any comments or suggestions?</p>
+            
+           
+            <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..." ></textarea>
+            <br>
+            <br>
+            <button id="submit" class="btn" type="submit">SUBMIT</button>
         </form>
 
 

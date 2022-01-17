@@ -1,8 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,200&display=swap');
 
+:root {
+    --height-elem: 35px;
+    --font-sixteen: 16px;
+}
+
+
 body {
     font-family: 'Poppins', sans-serif;
-    background-image:url(./image.jpg);
+    background-image:url("https://cdn.pixabay.com/photo/2020/11/29/16/00/naruto-5788207__340.png");
     width: 100%;
     height: 100vh;
     background-size: cover;
@@ -12,12 +18,12 @@ body {
 }
 
 #title {
+    margin-top: 40px;
     align-items: center;
     text-align: center;
 }
 
 #title h1 {
-    margin-top: 40px;
     font-size: 2.3rem;
     font-weight: 400;
     margin-bottom: 0px;
@@ -30,7 +36,82 @@ body {
     font-size: 1.3rem;
     margin-top: 0px;
     padding-top: 0px;
+    font-family: inherit;
 }
 .todo {
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#survey-form {
+    background-color: rgba(39, 11, 43, 0.712);
+    padding: 30px;
+    border: 0;
+}
+
+
+input[type=text] {
+    width: 100%;
+    height: var(--height-elem);
+    border: 0;
+    font-family: inherit;
+}
+
+input[type=email] {
+    width: 100%;
+    height: var(--height-elem);
+    border: 0;
+    font-family: inherit;
+}
+
+input[type=number] {
+    width: 100%;
+    height: var(--height-elem);
+    border: 0;
+    font-family: inherit;
+}
+
+::placeholder {
+    color: rgb(75, 83, 81);
+    font-size: var(--font-sixteen);
+    height: var(--height-elem);
+    font-family: inherit;
+}
+
+#dropdown {
+    color: rgb(75, 83, 81);
+    font-size: var(--font-sixteen);
+    width: 100%;
+    height: var(--height-elem);
+    font-family: inherit;
+}
+
+textarea {
+    width: 100%;
+    height: 60px;
+    font-family: inherit;
+}
+
+.comments {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.btn {
+    background-color: rgba(107, 192, 107, 0.76);
+    border-radius:2px;
+    height: var(--height-elem);
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-size: var(--font-sixteen);
+    font-weight: 500;
+    color: rgb(26, 22, 18);
+    border: 0;
+    font-family: inherit;
 }
